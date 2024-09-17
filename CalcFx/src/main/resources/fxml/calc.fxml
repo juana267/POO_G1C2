@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxWidth="Infinity" prefHeight="369.0" prefWidth="750.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.calcfx.control.CalcControl">
+   <children>
+      <HBox prefHeight="358.0" prefWidth="733.0">
+         <children>
+            <Pane prefHeight="369.0" prefWidth="597.0">
+               <children>
+                  <VBox prefHeight="359.0" prefWidth="360.0">
+                     <children>
+                        <TextField fx:id="txtResultado" editable="false" prefHeight="61.0" prefWidth="360.0" style="-fx-font-size: 32;" />
+
+                        <GridPane alignment="center" hgap="10.0" prefHeight="292.0" prefWidth="329.0" vgap="10.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="ALWAYS" minWidth="50.0" />
+                              <ColumnConstraints hgrow="ALWAYS" minWidth="50.0" />
+                              <ColumnConstraints hgrow="ALWAYS" minWidth="50.0" />
+                              <ColumnConstraints hgrow="ALWAYS" minWidth="50.0" />
+                              <ColumnConstraints hgrow="ALWAYS" minWidth="50.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="50.0" vgrow="ALWAYS" />
+                              <RowConstraints minHeight="50.0" vgrow="ALWAYS" />
+                              <RowConstraints minHeight="50.0" vgrow="ALWAYS" />
+                              <RowConstraints minHeight="50.0" vgrow="ALWAYS" />
+                              <RowConstraints minHeight="50.0" vgrow="ALWAYS" />
+                           </rowConstraints>
+                           <Button fx:id="btnDv1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" text="1/x" GridPane.columnIndex="4" GridPane.columnSpan="1" GridPane.rowIndex="2">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btnBin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" text="Bin" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+
+                           <Button fx:id="btnC" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="CE" textFill="#ae0f0f" GridPane.rowIndex="4">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btnRaiz" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="√" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btnPotencia" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="x²" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btnDiv" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+
+                           <Button fx:id="btn7" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="7" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btn8" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btn9" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btnMul" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+
+                           <Button fx:id="btn4" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="4" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btn5" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btn6" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btnRest" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+
+                           <Button fx:id="btn1" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="1" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btn2" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btn3" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btnSum" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+
+                           <Button fx:id="btn0" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="btnIgual" cancelButton="true" defaultButton="true" maxHeight="Infinity" maxWidth="Infinity" onAction="#accionButton" style="-fx-font-size: 24;" text="=" underline="true" wrapText="true" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font></Button>
+                           <Button fx:id="AC" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" text="AC" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                           <Button fx:id="btnPI" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButton" text="π">
+                              <font>
+                                 <Font name="AdobePiStd" size="18.0" />
+                              </font>
+                           </Button>
+                           <Button fx:id="ON" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="ON" GridPane.columnIndex="4" />
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <AnchorPane layoutX="360.0" layoutY="5.0" prefHeight="369.0" prefWidth="210.0">
+                     <children>
+                        <TableView fx:id="tableView" layoutY="14.0" prefHeight="200.0" prefWidth="382.0">
+                           <columns>
+                              <TableColumn fx:id="cVal1" prefWidth="48.0" text="VAL1" />
+                              <TableColumn fx:id="cVal2" prefWidth="50.0" text="VAL2" />
+                              <TableColumn fx:id="cOper" prefWidth="88.0" text="OPERADOR" />
+                              <TableColumn fx:id="cResul" prefWidth="87.0" text="RESULTADO" />
+                              <TableColumn fx:id="cOpc" minWidth="20.0" prefWidth="108.0" text="OPCIONES" />
+                           </columns>
+                        </TableView>
+                        <TextField layoutY="200.0" text="JUANA TITO LARICO" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</VBox>
